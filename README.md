@@ -1,1 +1,3 @@
-# OS2
+# Autós Híroldal
+
+Olyan autós híroldal létrehozása amely autókkal kapcsolatos, ahova az admin megadott tartalmat tud posztolni, és ezeket a bejelentkezett felhasználók láthatják. Akik nem rendelkeznek felhasználóval azok ne lássák ezeket a tartalmakat, hanem egy bevezető felületet kapjanak ami leírást ad az oldalról, és regisztrációs felületet is biztosít. Legyenek különféle szintek, például Adminisztrátor aki tudja kezelni a posztokat, stb és feltölteni tartalmat, listázni tudja az összes felhasználót. a felhasználók számára legyen egy profil felület, amelyen láthatják az adataikat, saját jogosultságát.

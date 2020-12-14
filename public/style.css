@@ -1,64 +1,46 @@
-body {
-	height: 12000px;
-	background-image: radial-gradient(#5680E9, #84CEEB, #5AB9EA, #C1C8E4, #8860D0) !important;
+body
+{
+	background-color:color:#333333; 
 }
-
-#data {
-	margin: 0 auto;
-	width: 500px;
+.background
+{
+  background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home
+{
+	color:#333333;
+	background-color: white;
 	text-align: center;
-	
-	padding: 30px;
-	border: 3px solid green;
-	
+	width: 900px;
+	position: center;
 }
-
-#inner{
-	
-}
-div > div > div > h1{
-	font-weight: bold;
+.profile
+{
+	color:white;
+	background-color: #595959;
 	text-align: center;
-	color: black;
-	font-family: Times New Roman;
+	width: 900px;
 }
- 
-div.w3-container {
-	border-bottom: 1px solid black;
-}
-
-#link{
-	color: black;
-	font-size: 24px;
+.news
+{
+	color:#333333;
+	background-color: white;
 	text-align: center;
-	font-family: Calibri;
+	width: 900px;
 }
-
-#logout{
-	font-weight: bold;
-	color: red;
-	font-size: 24px;
-	text-align: center;
-	font-family: Calibri;
+.footer
+{
+	color:white;
 }
-
-#prof{
-	font-size: 48px;
-	font-weight: bold;
-	
+.background2
+{
+	background-color:#595959;
 }
-
-#image{
-	margin-top: 50px;
-	
-	border-radius: 50%;
-}
-
-#submit{
-	margin-top: 20px;
-	margin-bottom: 50px;
-}
-
-#edit{
-	color: black;
+.background3
+{
+	background-color:#333333;
 }

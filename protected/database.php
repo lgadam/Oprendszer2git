@@ -1,11 +1,13 @@
 <?php 
-function getConnection() {
+function getConnection() 
+{
 	$connection = new PDO(DB_TYPE.':host='.DB_HOST.';dbname='.DB_NAME.';',DB_USER, DB_PASS);
 	$connection->exec("SET NAMES '".DB_CHARSET."'");
 	return $connection;
 }
 
-function getRecord($queryString, $queryParams = []) {
+function getRecord($queryString, $queryParams = []) 
+{
 	$connection = getConnection();
 	$statement = $connection->prepare($queryString);
 	$success = $statement->execute($queryParams);
@@ -15,7 +17,8 @@ function getRecord($queryString, $queryParams = []) {
 	return $result;
 }
 
-function getList($queryString, $queryParams = []) {
+function getList($queryString, $queryParams = []) 
+{
 	$connection = getConnection();
 	$statement = $connection->prepare($queryString);
 	$success = $statement->execute($queryParams);
@@ -25,7 +28,8 @@ function getList($queryString, $queryParams = []) {
 	return $result;
 }
 
-function executeDML($queryString, $queryParams = []) {
+function executeDML($queryString, $queryParams = []) 
+{
 	$connection = getConnection();
 	$statement = $connection->prepare($queryString);
 	$success = $statement->execute($queryParams);
@@ -34,7 +38,8 @@ function executeDML($queryString, $queryParams = []) {
 	return $success;
 }
 
-function getField($queryString, $queryParams = []) {
+function getField($queryString, $queryParams = []) 
+{
 	$connection = getConnection();
 	$statement = $connection->prepare($queryString);
 	$success = $statement->execute($queryParams);
@@ -43,4 +48,5 @@ function getField($queryString, $queryParams = []) {
 	$connection = null;
 	return $result;
 }
+
 ?>
